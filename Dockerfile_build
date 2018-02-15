@@ -1,0 +1,29 @@
+FROM nvidia/cuda:9.0-devel
+MAINTAINER Leonardo Loures <luvres@hotmail.com>
+
+## References:
+# https://www.youtube.com/watch?v=q4Xj46XMTdc
+
+ENV USER="1uvr3z@gmail.com" \
+	COIN=ltc \
+	PORT=3336
+
+RUN \
+	cd \
+	&& apt-get update \
+	&& apt-get install -y \
+		git \
+		build-essential \
+		libcurl4-openssl-dev \
+		libssl-dev \
+		libjansson-dev \
+		automake \
+		autotools-dev \
+  \
+	&& git clone https://github.com/tpruvot/ccminer.git \
+	&& cd ccminer \
+	&& ./autogen.sh \
+	&& ./configure \
+	&& ./build.sh
+
+CMD ccminer -a scrypt -o stratum+tcp://$COIN.pool.minergate.com:$PORT -u $USER -p x
