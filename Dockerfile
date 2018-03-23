@@ -7,9 +7,11 @@ MAINTAINER Leonardo Loures <luvres@hotmail.com>
 # https://minergate.com/altminers/cpuminer-multi-wolf
 # https://github.com/KlausT/ccminer-cryptonight
 
-ENV USER="1uvr3z@gmail.com" \
-        COIN=ltc \
-        PORT=3336
+ENV \
+	USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
+	POOL="pool.supportxmr.com" \
+	PORT="5555" \
+	ALGORITHM="cryptonight" 
 
 RUN \
 	apt-get update \
@@ -17,4 +19,4 @@ RUN \
 
 COPY ccminer /usr/bin
 
-CMD ccminer -a scrypt -o stratum+tcp://$COIN.pool.minergate.com:$PORT -u $USER -p x
+CMD ccminer -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $USER -p x

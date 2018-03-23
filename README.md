@@ -18,12 +18,25 @@ sudo -b nohup nvidia-docker-plugin > /tmp/nvidia-docker.log
 nvidia-docker run --rm nvidia/cuda nvidia-smi
 ```
 
-#### Run
+### Run
+
+##### SupportXMR
+```
+nvidia-docker run -ti --rm --name Ccminer-ltc \
+-e USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \ 
+-e POOL="pool.supportxmr.com" \
+-e PORT="5555" \
+-e ALGORITHM="cryptonight" \
+izone/ccminer:ltc
+```
+
+##### Minergate
 ```
 nvidia-docker run -ti --rm --name Ccminer-ltc \
 -e USER="1uvr3z@gmail.com" \ 
--e COIN=ltc \
--e PORT=3336 \
+-e POOL="ltc.pool.minergate.com" \
+-e PORT="3336" \
+-e ALGORITHM="scrypt" \
 izone/ccminer:ltc
 ```
 
