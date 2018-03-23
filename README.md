@@ -22,8 +22,8 @@ nvidia-docker run --rm nvidia/cuda nvidia-smi
 
 ##### SupportXMR
 ```
-nvidia-docker run -ti --rm --name Ccminer-ltc \
--e USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \ 
+nvidia-docker run -ti --rm --name Ccminer \
+-e USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
 -e POOL="pool.supportxmr.com" \
 -e PORT="5555" \
 -e ALGORITHM="cryptonight" \
@@ -32,8 +32,8 @@ izone/ccminer
 
 ##### Minergate
 ```
-nvidia-docker run -ti --rm --name Ccminer-ltc \
--e USER="1uvr3z@gmail.com" \ 
+nvidia-docker run -ti --rm --name Ccminer \
+-e USER="1uvr3z@gmail.com" \
 -e POOL="ltc.pool.minergate.com" \
 -e PORT="3336" \
 -e ALGORITHM="scrypt" \
