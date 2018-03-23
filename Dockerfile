@@ -8,9 +8,9 @@ MAINTAINER Leonardo Loures <luvres@hotmail.com>
 # https://github.com/KlausT/ccminer-cryptonight
 
 ENV \
-	USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
-	POOL="pool.supportxmr.com" \
-	PORT="5555" \
+	USER="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
+	POOL="cryptonight.eu.nicehash.com" \
+	PORT="3355" \
 	ALGORITHM="cryptonight" 
 
 RUN \
