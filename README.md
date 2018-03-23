@@ -27,7 +27,7 @@ nvidia-docker run -ti --rm --name Ccminer-ltc \
 -e POOL="pool.supportxmr.com" \
 -e PORT="5555" \
 -e ALGORITHM="cryptonight" \
-izone/ccminer:ltc
+izone/ccminer
 ```
 
 ##### Minergate
@@ -37,7 +37,7 @@ nvidia-docker run -ti --rm --name Ccminer-ltc \
 -e POOL="ltc.pool.minergate.com" \
 -e PORT="3336" \
 -e ALGORITHM="scrypt" \
-izone/ccminer:ltc
+izone/ccminer
 ```
 
 #### Build
