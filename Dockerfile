@@ -8,10 +8,11 @@ MAINTAINER Leonardo Loures <luvres@hotmail.com>
 # https://github.com/KlausT/ccminer-cryptonight
 
 ENV \
-	USER="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
+	ALGORITHM="cryptonight" \
 	POOL="cryptonight.eu.nicehash.com" \
 	PORT="3355" \
-	ALGORITHM="cryptonight" 
+	USER="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
+	USERPASS="fx8350"
 
 RUN \
 	apt-get update \
@@ -19,4 +20,4 @@ RUN \
 
 COPY ccminer /usr/bin
 
-CMD ccminer -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $USER -p x
+CMD ccminer -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $USER -p $USERPASS

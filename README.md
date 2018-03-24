@@ -26,30 +26,33 @@ nvidia-docker run -ti --rm --name Ccminer-Nicehash izone/ccminer
 ```
 ```
 nvidia-docker run -ti --rm --name Ccminer-Nicehash \
--e USER="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
+-e ALGORITHM="cryptonight" \
 -e POOL="cryptonight.eu.nicehash.com" \
 -e PORT="3355" \
--e ALGORITHM="cryptonight" \
+-e USER="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
+-e USERPASS="fx8350" \
 izone/ccminer
 ```
 
 ##### SupportXMR
 ```
 nvidia-docker run -ti --rm --name Ccminer \
--e USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
+-e ALGORITHM="cryptonight" \
 -e POOL="pool.supportxmr.com" \
 -e PORT="5555" \
--e ALGORITHM="cryptonight" \
+-e USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
+-e USERPASS="fx8350" \
 izone/ccminer
 ```
 
 ##### Minergate
 ```
 nvidia-docker run -ti --rm --name Ccminer \
--e USER="1uvr3z@gmail.com" \
+-e ALGORITHM="scrypt" \
 -e POOL="ltc.pool.minergate.com" \
 -e PORT="3336" \
--e ALGORITHM="scrypt" \
+-e USER="1uvr3z@gmail.com" \
+-e USERPASS="fx8350" \
 izone/ccminer
 ```
 
