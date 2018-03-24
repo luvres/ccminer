@@ -52,7 +52,7 @@ nvidia-docker run -ti --rm --name Ccminer \
 -e POOL="ltc.pool.minergate.com" \
 -e PORT="3336" \
 -e USER="1uvr3z@gmail.com" \
--e USERPASS="gtx1050" \
+-e USERPASS="x" \
 izone/ccminer
 ```
 
