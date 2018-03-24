@@ -30,7 +30,7 @@ nvidia-docker run -ti --rm --name Ccminer-Nicehash \
 -e POOL="cryptonight.eu.nicehash.com" \
 -e PORT="3355" \
 -e USER="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
--e USERPASS="fx8350" \
+-e USERPASS="x" \
 izone/ccminer
 ```
 
