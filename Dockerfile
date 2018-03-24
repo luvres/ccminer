@@ -12,7 +12,7 @@ ENV \
 	POOL="cryptonight.eu.nicehash.com" \
 	PORT="3355" \
 	USER="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
-	USERPASS="fx8350"
+	USERPASS="x"
 
 RUN \
 	apt-get update \
