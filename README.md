@@ -41,7 +41,7 @@ nvidia-docker run -ti --rm --name Ccminer \
 -e POOL="pool.supportxmr.com" \
 -e PORT="5555" \
 -e USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
--e USERPASS="fx8350" \
+-e USERPASS="gtx1050" \
 izone/ccminer
 ```
 
@@ -52,7 +52,7 @@ nvidia-docker run -ti --rm --name Ccminer \
 -e POOL="ltc.pool.minergate.com" \
 -e PORT="3336" \
 -e USER="1uvr3z@gmail.com" \
--e USERPASS="fx8350" \
+-e USERPASS="gtx1050" \
 izone/ccminer
 ```
 
