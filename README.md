@@ -43,6 +43,28 @@ nvidia-docker run -ti --rm --name Ccminer \
 izone/ccminer
 ```
 
+##### BBS Coin
+```
+nvidia-docker run -ti --rm --name Ccminer-bbs \
+-e ALGORITHM="cryptonight" \
+-e POOL="78.46.85.142" \
+-e PORT="19931" \
+-e USER="fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX" \
+-e USERPASS="x" \
+izone/ccminer
+```
+
+##### QWC Qwerty coin
+```
+nvidia-docker run -ti --rm --name Ccminer-qwc \
+-e ALGORITHM="cryptonight" \
+-e POOL="78.46.85.142" \
+-e PORT="8261" \
+-e USER="QWC1GWTaTdNCGBnQPspUYZi3WUty9mDJPgCM3ohTupC1NjhL1uTzHed2xC3VV79P57A3L5ZWrzKC8a4hXifqwuyd4yQSrY82EK" \
+-e USERPASS="x" \
+izone/ccminer
+```
+
 ##### Minergate
 ```
 nvidia-docker run -ti --rm --name Ccminer \
