@@ -76,6 +76,18 @@ nvidia-docker run -ti --rm --name Ccminer \
 izone/ccminer
 ```
 
+##### BMC Browsermine
+```
+nvidia-docker run -ti --rm --name Ccminer-bmc \
+-e ALGORITHM="cryptonight" \
+-e POOL="pool.bmnr.pw" \
+-e PORT="4444" \
+-e USER="2361631" \
+-e USERPASS="x" \
+izone/ccminer
+```
+
+-----
 #### Build
 ```
 docker build -t izone/ccminer .
